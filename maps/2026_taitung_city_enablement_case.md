@@ -6,7 +6,7 @@ date: 2026-04-16
 type: CaseStudy
 cover_image: assets/images/20260416_taitung_case_cover.png
 ---
-![台東 30 個人氣景點推薦](assets/images/taitung_top30_spots.jpg)
+![台東 30 個人氣景點推薦](https://raw.githubusercontent.com/wuulong/taitung-tourism-enablement-walkgis/main/assets/images/taitung_top30_spots.jpg)
 
 
 # 🏨 2026 台東市旅宿業者賦能實踐地圖 (ISMap)
