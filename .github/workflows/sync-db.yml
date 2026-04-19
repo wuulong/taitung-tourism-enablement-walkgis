@@ -1,0 +1,36 @@
+name: WalkGIS DB Auto-Sync
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'features/**'
+      - 'maps/**'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install pyyaml
+
+      - name: Sync Database
+        run: |
+          python3 scripts/sync_walkgis_db.py
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add walkgis.db
+          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: sync walkgis.db from markdown changes" && git push)
