@@ -1,6 +1,4 @@
 ---
-![台東 30 個人氣景點推薦](assets/images/taitung_top30_spots.jpg)
-
 map_id: 2026_taitung_city_enablement_case
 name: 2026 台東市旅宿業者賦能實踐地圖
 region: 台東市
@@ -8,6 +6,8 @@ date: 2026-04-16
 type: CaseStudy
 cover_image: assets/images/20260416_taitung_case_cover.png
 ---
+![台東 30 個人氣景點推薦](assets/images/taitung_top30_spots.jpg)
+
 
 # 🏨 2026 台東市旅宿業者賦能實踐地圖 (ISMap)
 
