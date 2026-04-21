@@ -8,6 +8,8 @@ cover_image: assets/images/20260416_taitung_case_cover.png
 ---
 ![台東 30 個人氣景點推薦](https://raw.githubusercontent.com/wuulong/taitung-tourism-enablement-walkgis/main/assets/images/taitung_top30_spots.jpg)
 
+![愛上台東藍](https://raw.githubusercontent.com/wuulong/taitung-tourism-enablement-walkgis/main/assets/images/愛上台東藍.jpg)
+
 
 # 🏨 2026 台東市旅宿業者賦能實踐地圖 (ISMap)
 
