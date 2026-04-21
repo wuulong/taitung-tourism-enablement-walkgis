@@ -8,12 +8,18 @@ on:
       - 'features/**'
       - 'maps/**'
 
+# 必須加入權限設定，允許 Action 寫入內容
+permissions:
+  contents: write
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -33,4 +39,10 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add walkgis.db
-          git diff --quiet && git diff --staged --quiet || (git commit -m "auto: sync walkgis.db from markdown changes" && git push)
+          # 檢查是否有變動，有的話才 commit & push
+          if [ -n "$(git status --porcelain)" ]; then
+            git commit -m "auto: sync walkgis.db from markdown changes"
+            git push
+          else
+            echo "No changes to commit"
+          fi
