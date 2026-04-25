@@ -4,7 +4,7 @@ name: 2026 台東市旅宿業者賦能實踐地圖
 region: 台東市
 date: 2026-04-16
 type: CaseStudy
-cover_image: assets/images/20260416_taitung_case_cover.png
+cover_image: assets/images/愛上台東藍.jpg
 ---
 ![台東 30 個人氣景點推薦](https://raw.githubusercontent.com/wuulong/taitung-tourism-enablement-walkgis/main/assets/images/taitung_top30_spots.jpg)
 
@@ -12,6 +12,9 @@ cover_image: assets/images/20260416_taitung_case_cover.png
 
 
 # 🏨 2026 台東市旅宿業者賦能實踐地圖 (ISMap)
+
+> [!NOTE]
+> 📖 [相關參考文件 (Google Drive)](https://drive.google.com/open?id=1ykGiU-P0g6MDnFOldhpcH6lHWyyWq9YExwoH-aBnSFw&usp=drive_copy)
 
 本案展示如何落實「軟體定義地圖 (SDM)」與「地理編碼實戰」。以「愛上台東藍民宿」為樞紐，連結三條主題路徑與周邊 30+ 個生活採集點。
 
